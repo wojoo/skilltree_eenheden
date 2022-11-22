@@ -28,7 +28,7 @@
             output2.innerHTML = 'Links level 1:  <br> -- begrip 1: <a href="https://forms.office.com/r/u9jRHagyHN" target="_blank" rel="noopener noreferrer">skill B1</a> <br> -- wiskunde 1: <a href="https://forms.office.com/r/UUK3eUJfkN" target="_blank" rel="noopener noreferrer">skill W1</a>';
         }
 
-        else if (input1.value < 9){
+        else if (input1.value < 9 && input1.value >0){
             output1.innerHTML = 'Level is: <strong>1</strong>';
             output2.innerHTML = 'Links level 1:  <br> -- begrip 1: <a href="https://forms.office.com/r/u9jRHagyHN" target="_blank" rel="noopener noreferrer">skill B1</a> <br> -- wiskunde 1: <a href="https://forms.office.com/r/UUK3eUJfkN" target="_blank" rel="noopener noreferrer">skill W1</a>';
         }
@@ -85,7 +85,7 @@
             '<br><br> Links level 6: <br> -- combinatie 3:...........';
         }
 
-        else if (input1.value > 85 && input1.value != 42069){
+        else if (input1.value > 85 && input1.value <=130){
             output1.innerHTML = 'Level is: <strong>Uitgespeeld!</strong>';
             output2.innerHTML = 'Wohoo, you made it! Super goed!!';
         }
@@ -96,8 +96,13 @@
             output2.innerHTML = 'Super dat je onze tester bent: we horen graag je mening: <a href="https://forms.office.com/r/QXc5YM6arV" target="_blank" rel="noopener noreferrer">Feedback testversie</a>';
         }
 
+        else if (input1.value > 130 && input1.value != 42069){
+            output1.innerHTML = 'Je hebt meer punten gehaald dan mogelijk is... Knap gedaan hoor.';
+            output2.innerHTML = 'Sta nu op en draai een rondje :)';
+        }
+
         else{
-            output1.innerHTML = 'Geen goede input. Vul een getal in tussen de 0 en de 95';
+            output1.innerHTML = 'Geen goede input. Vul een heel getal in.';
             output2.innerHTML = ' ';
         }
 
