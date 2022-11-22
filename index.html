@@ -22,23 +22,27 @@
     const output2 = document.getElementById('output2');
 
     function spitoutlinks(){
-
+        
+        // start 0 xp
         if (input1.value == 0){
             output1.innerHTML = 'Level is: <strong>1</strong> <br><br> Welkom! We gaan beginnen; Zin in! ';
             output2.innerHTML = 'Links level 1:  <br> -- begrip 1: <a href="https://forms.office.com/r/u9jRHagyHN" target="_blank" rel="noopener noreferrer">skill B1</a> <br> -- wiskunde 1: <a href="https://forms.office.com/r/UUK3eUJfkN" target="_blank" rel="noopener noreferrer">skill W1</a>';
         }
 
+        // level 1
         else if (input1.value < 9 && input1.value >0){
             output1.innerHTML = 'Level is: <strong>1</strong>';
             output2.innerHTML = 'Links level 1:  <br> -- begrip 1: <a href="https://forms.office.com/r/u9jRHagyHN" target="_blank" rel="noopener noreferrer">skill B1</a> <br> -- wiskunde 1: <a href="https://forms.office.com/r/UUK3eUJfkN" target="_blank" rel="noopener noreferrer">skill W1</a>';
         }
 
+        // level 2
         else if (input1.value >=9 && input1.value <=17){
             output1.innerHTML = 'Level is: <strong>2</strong>';
             output2.innerHTML = 'Links level 1:  <br> -- begrip 1: <a href="https://forms.office.com/r/u9jRHagyHN" target="_blank" rel="noopener noreferrer">skill B1</a> <br> -- wiskunde 1: <a href="https://forms.office.com/r/UUK3eUJfkN" target="_blank" rel="noopener noreferrer">skill W1</a>' +
             '<br><br> Links level 2:  <br> -- begrip 2: <a href="https://forms.office.com/r/nN8KGBKvaE" target="_blank" rel="noopener noreferrer">skill B2</a> <br> -- wiskunde 2: <a href="https://forms.office.com/r/zP8NahMCsa" target="_blank" rel="noopener noreferrer">skill W2</a>';
         }
 
+        // level 3
         else if (input1.value >=18 && input1.value <=38){
             output1.innerHTML = 'Level is: <strong>3</strong>';
             output2.innerHTML = 'Links level 1:  <br> -- begrip 1: <a href="https://forms.office.com/r/u9jRHagyHN" target="_blank" rel="noopener noreferrer">skill B1</a> <br> -- wiskunde 1: <a href="https://forms.office.com/r/UUK3eUJfkN" target="_blank" rel="noopener noreferrer">skill W1</a>' +
@@ -46,11 +50,13 @@
             '<br><br> Links level 3:  <br> -- begrip 3: <a href="https://forms.office.com/r/YTTy06bTJi" target="_blank" rel="noopener noreferrer">skill B3</a> <br> -- wiskunde 3: <a href="https://forms.office.com/r/xXpxKbH4uH" target="_blank" rel="noopener noreferrer">skill W3</a>';
         }
 
+        // level 4
         else if (input1.value >=39 && input1.value <=59 && input1.value != 42){
             output1.innerHTML = 'Level is: <strong>4</strong>';
             output2.innerHTML = 'Links level 2:  <br> -- begrip 2: <a href="https://forms.office.com/r/nN8KGBKvaE" target="_blank" rel="noopener noreferrer">skill B2</a> <br> -- wiskunde 2: <a href="https://forms.office.com/r/zP8NahMCsa" target="_blank" rel="noopener noreferrer">skill W2</a>' + 
             '<br><br> Links level 3:  <br> -- begrip 3: <a href="https://forms.office.com/r/YTTy06bTJi" target="_blank" rel="noopener noreferrer">skill B3</a> <br> -- wiskunde 3: <a href="https://forms.office.com/r/xXpxKbH4uH" target="_blank" rel="noopener noreferrer">skill W3</a>'+
-            '<br><br> Links level 4:  <br> -- begrip 4: ........... <br>-- begrip 5: ............ <br>-- combinatie 1: ............';
+            '<br><br> Links level 4:  <br> -- begrip 4: <a href="https://forms.office.com/r/khmCixb0kj" target="_blank" rel="noopener noreferrer">skill B4</a> <br>-- begrip 5: <a href="https://forms.office.com/r/WRJNg8ayka" target="_blank" rel="noopener noreferrer">skill B5</a> <br>' + 
+            '-- combinatie 1: <a href="https://forms.office.com/r/ZF06NWbghm " target="_blank" rel="noopener noreferrer">skill C1</a>';
         }
 
         // easter egg 
@@ -59,15 +65,19 @@
             output2.innerHTML = 'Gefeliciteerd; je hebt het antwoord op alles gevonden. Nu nog op de eenheden ;)'+
             '<br><br> Links level 2:  <br> -- begrip 2: <a href="https://forms.office.com/r/nN8KGBKvaE" target="_blank" rel="noopener noreferrer">skill B2</a> <br> -- wiskunde 2: <a href="https://forms.office.com/r/zP8NahMCsa" target="_blank" rel="noopener noreferrer">skill W2</a>' + 
             '<br><br> Links level 3:  <br> -- begrip 3: <a href="https://forms.office.com/r/YTTy06bTJi" target="_blank" rel="noopener noreferrer">skill B3</a> <br> -- wiskunde 3: <a href="https://forms.office.com/r/xXpxKbH4uH" target="_blank" rel="noopener noreferrer">skill W3</a>'+
-            '<br><br> Links level 4:  <br> -- begrip 4: ........... <br>-- begrip 5: ............ <br>-- combinatie 1: ............';
+            '<br><br> Links level 4:  <br> -- begrip 4: <a href="https://forms.office.com/r/khmCixb0kj" target="_blank" rel="noopener noreferrer">skill B4</a> <br>-- begrip 5: <a href="https://forms.office.com/r/WRJNg8ayka" target="_blank" rel="noopener noreferrer">skill B5</a> <br>' + 
+            '-- combinatie 1: <a href="https://forms.office.com/r/ZF06NWbghm " target="_blank" rel="noopener noreferrer">skill C1</a>';
         }
 
-
+        // level 5
         else if (input1.value >=60 && input1.value <=77 && input1.value != 69){
             output1.innerHTML = 'Level is: <strong>5</strong>';
             output2.innerHTML = 'Links level 3:  <br> -- begrip 3: <a href="https://forms.office.com/r/YTTy06bTJi" target="_blank" rel="noopener noreferrer">skill B3</a> <br> -- wiskunde 3: <a href="https://forms.office.com/r/xXpxKbH4uH" target="_blank" rel="noopener noreferrer">skill W3</a>'+
-            '<br><br> Links level 4:  <br> -- begrip 4: ........... <br>-- begrip 5: ............ <br>-- combinatie 1: ............'+
-            '<br><br> Links level 5:  <br> -- begrip 6: ........... <br>-- begrip 7: ............ <br>-- combinatie 2: ............';
+            '<br><br> Links level 4:  <br> -- begrip 4: <a href="https://forms.office.com/r/khmCixb0kj" target="_blank" rel="noopener noreferrer">skill B4</a> <br>-- begrip 5: <a href="https://forms.office.com/r/WRJNg8ayka" target="_blank" rel="noopener noreferrer">skill B5</a> <br>' + 
+            '-- combinatie 1: <a href="https://forms.office.com/r/ZF06NWbghm " target="_blank" rel="noopener noreferrer">skill C1</a>'+
+            '<br><br> Links level 5:  <br> -- begrip 6:<a href="https://forms.office.com/r/gNwLYTCb8s" target="_blank" rel="noopener noreferrer">skill B6</a>'+
+            ' <br>-- begrip 7: <a href="https://forms.office.com/r/UTiekdy56G" target="_blank" rel="noopener noreferrer">skill B7</a>'+
+            '<br>-- combinatie 2: <a href="https://forms.office.com/r/nREAbrHehU" target="_blank" rel="noopener noreferrer">skill C2</a>';
         }
 
         // easter egg 
@@ -75,16 +85,23 @@
             output1.innerHTML = 'Level is: <strong>5</strong>';
             output2.innerHTML = '<strong> ^^ </strong>'+
             '<br><br> Links level 3:  <br> -- begrip 3: <a href="https://forms.office.com/r/YTTy06bTJi" target="_blank" rel="noopener noreferrer">skill B3</a> <br> -- wiskunde 3: <a href="https://forms.office.com/r/xXpxKbH4uH" target="_blank" rel="noopener noreferrer">skill W3</a>'+
-            '<br><br> Links level 4:  <br> -- begrip 4: ........... <br>-- begrip 5: ............ <br>-- combinatie 1: ............'+
-            '<br><br> Links level 5:  <br> -- begrip 6: ........... <br>-- begrip 7: ............ <br>-- combinatie 2: ............';
+            '<br><br> Links level 4:  <br> -- begrip 4: <a href="https://forms.office.com/r/khmCixb0kj" target="_blank" rel="noopener noreferrer">skill B4</a> <br>-- begrip 5: <a href="https://forms.office.com/r/WRJNg8ayka" target="_blank" rel="noopener noreferrer">skill B5</a> <br>' + 
+            '-- combinatie 1: <a href="https://forms.office.com/r/ZF06NWbghm " target="_blank" rel="noopener noreferrer">skill C1</a>'+
+            '<br><br> Links level 5:  <br> -- begrip 6:<a href="https://forms.office.com/r/gNwLYTCb8s" target="_blank" rel="noopener noreferrer">skill B6</a>'+
+            ' <br>-- begrip 7: <a href="https://forms.office.com/r/UTiekdy56G" target="_blank" rel="noopener noreferrer">skill B7</a>'+
+            '<br>-- combinatie 2: <a href="https://forms.office.com/r/nREAbrHehU" target="_blank" rel="noopener noreferrer">skill C2</a>';
         }
 
+        // level 6
         else if (input1.value >=78 && input1.value <=85){
             output1.innerHTML = 'Level is: <strong>6</strong>';
-            output2.innerHTML = 'Links level 5:  <br> -- begrip 6: ........... <br>-- begrip 7: ............ <br>-- combinatie 2: ............'+
-            '<br><br> Links level 6: <br> -- combinatie 3:...........';
+            output2.innerHTML = 'Links level 5:  <br> -- begrip 6:<a href="https://forms.office.com/r/gNwLYTCb8s" target="_blank" rel="noopener noreferrer">skill B6</a>'+
+            ' <br>-- begrip 7: <a href="https://forms.office.com/r/UTiekdy56G" target="_blank" rel="noopener noreferrer">skill B7</a>'+
+            '<br>-- combinatie 2: <a href="https://forms.office.com/r/nREAbrHehU" target="_blank" rel="noopener noreferrer">skill C2</a>'+
+            '<br><br> Links level 6: <br> -- combinatie 3: <a href="https://forms.office.com/r/SKQi5ARQrq" target="_blank" rel="noopener noreferrer">skill C3: We zijn er bijna</a>';
         }
 
+        // uitgespeeld
         else if (input1.value > 85 && input1.value <=130){
             output1.innerHTML = 'Level is: <strong>Uitgespeeld!</strong>';
             output2.innerHTML = 'Wohoo, you made it! Super goed!!';
@@ -96,18 +113,27 @@
             output2.innerHTML = 'Super dat je onze tester bent: we horen graag je mening: <a href="https://forms.office.com/r/QXc5YM6arV" target="_blank" rel="noopener noreferrer">Feedback testversie</a>';
         }
 
-        else if (input1.value > 130 && input1.value != 42069){
+        // antwoorden C3 voor docenten 
+        else if (input1.value == 981){
+            output1.innerHTML = 'Antwoorden skill C3 voor docenten';
+            output2.innerHTML = '<a href="https://drive.google.com/drive/folders/1GeO3RhD3CroFw2Eb8ZItHSm2CY1lo3qU?usp=sharing" target="_blank" rel="noopener noreferrer">Antwoorden skill C3</a>';
+        }
+
+        // teveel xp invullen
+        else if (input1.value > 130 && input1.value != 42069 && input1.value != 981){
             output1.innerHTML = 'Je hebt meer punten gehaald dan mogelijk is... Knap gedaan hoor.';
             output2.innerHTML = 'Sta nu op en draai een rondje :)';
         }
 
+        // negatief getal of iets anders invullen
         else{
-            output1.innerHTML = 'Geen goede input. Vul een heel getal in.';
+            output1.innerHTML = 'Geen goede input. Vul een positief, geheel getal in.';
             output2.innerHTML = ' ';
         }
 
     }
 
+    // click knop 
     btn1.addEventListener('click', spitoutlinks);
     
     // press enter in txtbox same as click on btn
